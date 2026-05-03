@@ -1,100 +1,264 @@
-Here's the full page, ready to paste:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megan Groves - Personal Site</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        /* Using a single font throughout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+            color: #010203;
+            font-size: 16px;
+        }
 
----
+        body {
+            line-height: 1.5;
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-MEGAN GROVES
+        header {
+            background-color: #f3f3f2;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
 
-# Hi! I'm Megan. Thanks for dropping by. My professional throughline is identifying, investing in, and commercializing net-new technology: as a founder building from zero, an operator scaling venture-backed companies, and an investor backing frontier tech.
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-**COMPANIES I'VE FOUNDED**
+        .name {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-I came from a family of entrepreneurs who inspired and nurtured my unconventional path. Building is (quite literally) in my DNA.
+        main {
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+        }
 
-* [Population](https://www.populationtech.com/). First-of-its-kind physical AI company for biosecurity and pandemic preparedness. Led from [research](https://onlinelibrary.wiley.com/doi/10.1111/php.13767) to revenue (Fortune500 customers). Won Frost & Sullivan New Product Innovation Award.
-* [Modular](https://www.modularmarketing.com/) (acquired). Venture Builder that spun up or embedded into venture-backed tech companies. Also served as interim CXO and provided GTM strategy, interim leadership, and expert ops that propelled dozens of category-creating Seed through Series D companies toward successful funding rounds, acquisitions, and exits (see more below). [Forbes writer](https://www.forbes.com/councils/forbesagencycouncil/people/megangroves/).
-* Core Health. SaaS platform for individuals managing gastrointestinal and reproductive health. Scaled to 20k+ MAUs with a concierge tier for high-value, custom engagements. Struggled to effectively scale, and shut to pursue MBA.
-* Infusion (acquired). A brick-and-mortar business I started at age 23 and grew into a multi-discipline wellness hub.
+        h1 {
+            font-weight: 300;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+        }
 
-**ANGEL INVESTMENTS**
+        details {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
 
-I focus on unstoppable founders innovating in the following categories:
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
 
-## **Physical AI & Autonomous Systems**
+        summary:focus {
+            outline: none;
+        }
 
-* [Miso Robotics](https://misorobotics.com/). Autonomous robotic kitchen assistants for the food service industry (backed by Ecolab, Pitbull Ventures, and Meyer Global).
-* [Fort Robotics](https://www.fortrobotics.com/). Industrial safety and security platform for autonomous machines (backed by Tiger Global Management, Quiet Capital, Compound, and Creative Ventures).
-* [Parallax Worlds](https://www.parallaxworlds.com/). Advanced reliability testing software for robots (backed by Unusual Ventures, Pear Ventures, and Boost VC).
-* [Network Ocean](https://networkocean.io/). Underwater data centers (backed by Y Combinator, Soma Capital, and Pioneer Fund).
+        p {
+            margin-bottom: 1rem;
+        }
 
-## **Energy & Field Operations**
+        h2 {
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
 
-* [Raya Power](https://rayapower.com/). Clean energy automation solutions (backed by Banco Popular).
-* [Elastic Energy](https://www.elasticenergy.io/). Orchestration infrastructure for the New Grid, connecting and controlling distributed energy systems at scale.
-* [Memo](https://memo.locker/). Edge-deployed voice AI operating system for radio networks (backed by Founder's Inc. and NVIDIA Inception Program).
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
 
-## **AI Infrastructure & Security**
+        li {
+            margin-bottom: 0.5rem;
+        }
 
-* [Reliabl](https://reliabl.ai/). Training and evaluation infrastructure for AI systems operating in high-stakes, real-world conditions (backed by New Media Ventures and Rogue).
-* [SoloKeys](https://solokeys.com/). Open source authentication hardware (seedstrapped + growing on revenue).
-* [Shelf.io](https://shelf.io). GenAI contextualization engine (backed by Base10 Partners, Insight Partners, Outsiders Fund, and Contour Venture Partners).
-* TheNeeds. AI/ML-powered content recommendation engine, acquired by Shopkick.
-* Noble. Secure payments, virtual commerce for on-premise events, acquired by GRUBBRR.
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
 
-## **Capital Markets Infrastructure**
+        a:hover {
+            text-decoration: none;
+        }
 
-* [Unruggable](https://unruggable.io). Hardware wallet and native self-custody app purpose-built for Solana, with a path to becoming a unified platform for storing and trading crypto, stocks, commodities, and other on-chain assets (backed by Colosseum and notable Solana ecosystem angels including the co-founder of Solana, the CEO of Squads, and the CEO of Helius).
+        .connect {
+            margin-top: 3rem;
+        }
 
-## **Health, Bio & Human Potential**
+        @media (max-width: 768px) {
+            main {
+                padding-top: 1rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <p class="name">MEGAN GROVES</p>
+        </div>
+    </header>
 
-* [Fauna Bio](https://www.faunabio.com/). Biotech company harnessing animal biology for human disease therapeutics (backed by True Ventures, National Institutes of Health, Lifeforce Capital, and The Longevity Fund).
-* [Clear Labs](https://www.clearlabs.com/). Genomic sequencing for food safety and quality testing (backed by Menlo Ventures, Khosla Ventures, and Wing Venture Capital).
-* [Spring & Mulberry](https://springandmulberry.com/). Pioneering a new category of whole-foods, with date-sweetened chocolate and other consumables (seedstrapped + growing on revenue).
-* [Remi](https://shopremi.com/). Sleep and oral health solutions (backed by Foundation Capital, MAGIC Fund, and notable angels).
-* [HumanQ](https://humanq.com/). Human capability and activation tool solving enterprise and small team challenges (backed by Kindred Ventures and notable angels).
-* [Nucleo](https://nucleoresearch.com/). AI-powered CT scan analysis for tumor characterization and treatment planning for oncologists and radiologists (backed by Y Combinator, Lombard Ventures, and notable angels).
-
-**Notes:**
-
-I've redacted companies in stealth, where I'm a silent investor, or who have disappeared.
-
-AI seems to be a categorical investment trend, but I see it as a foundational technology that brings enablement and competitive advantage to companies with a clear definition of a value proposition. Many of the above companies are also "AI companies," but I've aligned them to a truer vertical.
-
-**COMPANIES I'VE HELPED SCALE**
-
-I've served as fractional CXO for 77 early stage companies, with an emphasis on category creation & GTM.
-
-Companies I can mention included: [Adweek](https://www.adweek.com/), Apollo, [Browns](https://www.brownsshoes.com/), [Captable.io](https://captable.io), [Density](https://www.density.io/), [Earthforce Technologies](https://www.earthforce.io/), [Eventbrite](https://www.eventbrite.com/), [FaunaDB](https://fauna.com/), [KISSmetrics](https://www.kissmetrics.io/), [Komposite](https://komposite.com/), [MakerBot](https://www.makerbot.com/), [Matouk](https://www.matouk.com/), [NEOU](https://neoufitness.com/), [Parsley Health](https://www.parsleyhealth.com/), [Shelf](https://shelf.io/), [Silvur](https://www.silvur.com/), [Startups.com](https://startups.com), [WeConvene](https://www.weconvene.com/).
-
-**VC AND FUND EXPERIENCE**
-
-Cultivated relationships across the VC landscape, from informal deal sharing to structured co-investment partnerships.
-
-**Current Venture Partner or Fund Advisor Roles**
-
-* [Blue Vision Capital](https://www.bluevisioncapital.com/). Blue Vision Capital backs seed stage companies transforming industrial, energy, and urban infrastructure through deeply embedded artificial intelligence. I help with positioning and thesis-building, startup sourcing and due diligence, and capital formation.
-* [Halcyon Ventures / Halcyon Futures](https://www.halcyonfutures.org). Responsible AI/biosecurity fund (one of the first). I was a Fund of Fund syndicate lead, and continue with startup sourcing and diligence, LP relationship-building, and thesis development.
-* [Amenti Capital](https://www.amenti.vc). Connected mobility fund. I advise on thesis, technical brand, and portco support.
-
-**Previous Fund Involvement**
-
-* [Grishin Robotics](https://www.grishinrobotics.com/). Early stage venture capital firm based in Silicon Valley that invests in robotics, consumer, and consumerized enterprise sectors. I leveraged my network of founders and funders to identify right-fit backable startups.
-* [Republic](https://republic.com/). Financial technology firm specializing in private market investment services. I sourced compelling companies for community financing.
-
-**Venture Capital Continuing Education**
-
-* [Venture Capital Unlocked](https://500.co/venture-education/vcu/stanford), with Stanford University & 500Global. An invite-only program designed for emerging leaders to shape the future of the venture capital industry.
-* [Valuation](https://imaa-institute.org/certificates/megan-groves-3897/), with Prof. Damodaran, Institute of Mergers, Acquisitions and Alliances (IMAA). A comprehensive review of the various methods used in valuation of a private and public firm in a domestic and a cross-border setting.
-* [VC Lab](https://govclab.com/), considered the premiere Venture Capital accelerator. I developed my thesis and fund materials, but did not raise a fund to formally graduate from the program.
-
-**ECOSYSTEM DEVELOPMENT**
-
-Provided extensive portfolio support, speaking engagements, and startup follow-on advisory for top-tier accelerators worldwide.
-
-* [Techstars](https://www.techstars.com/). New York City, Hardware/IOT, Barclay's Fin-Tech & Blockchain programs.
-* [Plug and Play Tech Center](https://www.plugandplaytechcenter.com/). Supply Chain & Logistics, Brand & Retail programs.
-* [Highway1](https://www.f6s.com/highway1). Silicon Valley's original hard-tech accelerator backed by PCH.
-* [H-Farm](https://www.h-farm.com/en). Italy.
-* [Gener8tor](https://www.gener8tor.com/). International. Emphasis on building global manufacturing and hard-tech businesses.
-* [500Global](https://500.co/). International. Emphasis on deep-tech, hard-tech, and AI.
-
-# I'd love to hear from you! Connect with me on [Linkedin](https://www.linkedin.com/in/megangroves/) or by [email](mailto:megan.m.groves@gmail.com).
+    <main>
+        <h1>Hi! I'm Megan. Thanks for dropping by.<br> <br>My professional throughline is identifying, investing in, and commercializing net-new technology: as a founder building from zero, an operator scaling venture-backed companies, and an investor backing frontier tech.</h1>
+        
+        <details>
+            <summary><strong>COMPANIES I&#8217;VE FOUNDED</strong></summary>
+            <p>I came from a family of entrepreneurs who inspired and nurtured my unconventional path. Building is (quite literally) in my DNA.</p>
+            
+            <ul>
+                <li><a href="https://www.populationtech.com/">Population</a>. First-of-its-kind physical AI company for biosecurity and pandemic preparedness. Led from <a href="https://onlinelibrary.wiley.com/doi/10.1111/php.13767">research</a> to revenue (Fortune500 customers). Won Frost &amp; Sullivan New Product Innovation Award.</li>
+                
+                <li><a href="https://www.modularmarketing.com/">Modular</a> (acquired). Venture Builder that spun up or embedded into venture-backed tech companies. Also served as interim CXO and provided GTM strategy, interim leadership, and expert ops ​that propelled dozens of category-creating Seed through Series D companies toward successful funding rounds, acquisitions, and exits (see more below). <a href="https://www.forbes.com/councils/forbesagencycouncil/people/megangroves/">Forbes writer</a>.</li>
+                
+                <li>Core Health. SaaS platform for individuals managing gastrointestinal and reproductive health. Scaled to 20k+ MAUs with a concierge tier for high-value, custom engagements. Struggled to effectively scale, and shut to pursue MBA.</li>
+                
+                <li>Infusion (acquired). A brick-and-mortar business I started at age 23 and grew into a multi-discipline wellness hub.</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary><strong>ANGEL INVESTMENTS</strong></summary>
+            <p>I focus on unstoppable founders innovating in the following categories:</p>
+            
+            <h2><strong>Physical AI &amp; Autonomous Systems</strong></h2>
+            
+            <ul>
+                <li><a href="https://misorobotics.com/">Miso Robotics</a>. Autonomous robotic kitchen assistants for the food service industry (backed by Ecolab, Pitbull Ventures, and Meyer Global).</li>
+                
+                <li><a href="https://www.fortrobotics.com/">Fort Robotics</a>. Industrial safety and security platform for autonomous machines (backed by Tiger Global Management, Quiet Capital, Compound, and Creative Ventures).</li>
+                
+                <li><a href="https://www.parallaxworlds.com/">Parallax Worlds</a>. Advanced reliability testing software for robots (backed by Unusual Ventures, Pear Ventures, and Boost VC).</li>
+                
+                <li><a href="https://networkocean.io/">Network Ocean</a>. Underwater data centers (backed by Y Combinator, Soma Capital, and Pioneer Fund).</li>
+            </ul>
+            
+            <h2><strong>Energy &amp; Field Operations</strong></h2>
+            
+            <ul>
+                <li><a href="https://rayapower.com/">Raya Power</a>. Clean energy automation solutions (backed by Banco Popular).</li>
+                
+                <li><a href="https://www.elasticenergy.io/">Elastic Energy</a>. Orchestration infrastructure for the New Grid, connecting and controlling distributed energy systems at scale.</li>
+                
+                <li><a href="https://memo.locker/">Memo</a>. Edge-deployed voice AI operating system for radio networks (backed by Founder's Inc. and NVIDIA Inception Program).</li>
+            </ul>
+            
+            <h2><strong>AI Infrastructure &amp; Security</strong></h2>
+            
+            <ul>
+                <li><a href="https://reliabl.ai/">Reliabl</a>. Training and evaluation infrastructure for AI systems operating in high-stakes, real-world conditions (backed by New Media Ventures and Rogue).</li>
+                
+                <li><a href="https://solokeys.com/">SoloKeys</a>. Open source authentication hardware (seedstrapped + growing on revenue).</li>
+                
+                <li><a href="https://shelf.io">Shelf.io</a>. GenAI contextualization engine (backed by Base10 Partners, Insight Partners, Outsiders Fund, and Contour Venture Partners).</li>
+                
+                <li><a href="https://unruggable.com/">Unruggable</a>. Hardware wallet and native app purpose-built for Solana (backed by Colosseum and notable Solana ecosystem angels).</li>
+                
+                <li>TheNeeds. AI/ML-powered content recommendation engine, acquired by Shopkick.</li>
+                
+                <li>Noble. Secure payments, virtual commerce for on-premise events, acquired by GRUBBRR.</li>
+            </ul>
+            
+            <h2><strong>Health, Bio &amp; Human Potential</strong></h2>
+            
+            <ul>
+                <li><a href="https://www.faunabio.com/">Fauna Bio</a>. Biotech company harnessing animal biology for human disease therapeutics (backed by True Ventures, National Institutes of Health, Lifeforce Capital, and The Longevity Fund).</li>
+                
+                <li><a href="https://www.clearlabs.com/">Clear Labs</a>. Genomic sequencing for food safety and quality testing (backed by Menlo Ventures, Khosla Ventures, and Wing Venture Capital).</li>
+                
+                <li><a href="https://springandmulberry.com/">Spring &amp; Mulberry</a>. Pioneering a new category of whole-foods (backed by notable angels).</li>
+                
+                <li><a href="https://shopremi.com/">Remi</a>. Sleep and oral health solutions (backed by Foundation Capital, MAGIC Fund, and notable angels).</li>
+                
+                <li><a href="https://humanq.com/">HumanQ</a>. Human capability and activation tool solving enterprise and small team challenges (backed by Kindred Ventures and notable angels).</li>
+                
+                <li><a href="https://nucleoresearch.com/">Nucleo</a>. AI-powered CT scan analysis for tumor characterization and treatment planning for oncologists and radiologists (backed by Y Combinator, Lombard Ventures, and notable angels).</li>
+            </ul>
+            
+            <p><strong>Notes:</strong></p>
+            
+            <p>I've redacted companies in stealth, where I'm a silent investor, or who have disappeared.</p>
+            
+            <p>AI seems to be a categorical investment trend, but I see it as a foundational technology that brings enablement and competitive advantage to companies with a clear definition of a value proposition. Many of the above companies are also "AI companies," but I've aligned them to a truer vertical.</p>
+        </details>
+        
+        <details>
+            <summary><strong>COMPANIES</strong> <strong>I&#8217;VE HELPED SCALE </strong></summary>
+            <p>I've served as fractional CXO for 77 early stage companies, with an emphasis on category creation &amp; GTM.</p>
+            
+            <p>Companies I can mention included: <a href="https://www.adweek.com/">Adweek</a>, Apollo, <a href="https://www.brownsshoes.com/">Browns</a>, <a href="https://captable.io">Captable.io</a>, <a href="https://www.density.io/">Density</a>, <a href="https://www.earthforce.io/">Earthforce Technologies</a>, <a href="https://www.eventbrite.com/">Eventbrite</a>, <a href="https://fauna.com/">FaunaDB</a>, <a href="https://www.kissmetrics.io/">KISSmetrics</a>, <a href="https://komposite.com/">Komposite</a>, <a href="https://www.makerbot.com/">MakerBot</a>, <a href="https://www.matouk.com/">Matouk</a>, <a href="https://neoufitness.com/">NEOU</a>, <a href="https://www.parsleyhealth.com/">Parsley Health</a>, <a href="https://shelf.io/">Shelf</a>, <a href="https://www.silvur.com/">Silvur</a>, <a href="https://startups.com">Startups.com</a>, <a href="https://www.weconvene.com/">WeConvene</a>.</p>
+        </details>
+        
+        <details>
+            <summary><strong>VC AND FUND EXPERIENCE</strong></summary>
+            <p>Cultivated relationships across the VC landscape, from informal deal sharing to structured co-investment partnerships.</p>
+            
+            <p><strong>Current Venture Partner or Fund Advisor Roles</strong></p>
+            
+            <ul>
+                <li><a href="https://www.bluevisioncapital.com/">Blue Vision Capital</a>. Blue Vision Capital backs seed stage companies transforming industrial, energy, and urban infrastructure through deeply embedded artificial intelligence. I help with positioning and thesis-building, startup sourcing and due diligence, and capital formation.</li>
+                
+                <li><a href="https://www.halcyonfutures.org">Halcyon Ventures / Halcyon Futures</a>. Responsible AI/biosecurity fund (one of the first). I was a Fund of Fund syndicate lead, and continue with startup sourcing and diligence, LP relationship-building, and thesis development.</li>
+                
+                <li><a href="https://www.amenti.vc">Amenti Capital</a>. Connected mobility fund. I advise on thesis, technical brand, and portco support.</li>
+            </ul>
+            
+            <p><strong>Previous Fund Involvement</strong></p>
+            
+            <ul>
+                <li><a href="https://www.grishinrobotics.com/">Grishin Robotics</a>. Early stage venture capital firm based in Silicon Valley that invests in robotics, consumer, and consumerized enterprise sectors. I leveraged my network of founders and funders to identify right-fit backable startups.</li>
+                
+                <li><a href="https://republic.com/">Republic</a>. Financial technology firm specializing in private market investment services. I sourced compelling companies for community financing.</li>
+            </ul>
+            
+            <p><strong>Venture Capital Continuing Education</strong></p>
+            
+            <ul>
+                <li><a href="https://500.co/venture-education/vcu/stanford">Venture Capital Unlocked</a>, with Stanford University &amp; 500Global. An invite-only program designed for emerging leaders to shape the future of the venture capital industry.</li>
+                
+                <li><a href="https://imaa-institute.org/certificates/megan-groves-3897/">Valuation</a>, with Prof. Damodaran, Institute of Mergers, Acquisitions and Alliances (IMAA). A comprehensive review of the various methods used in valuation of a private and public firm in a domestic and a cross-border setting.</li>
+                
+                <li><a href="https://govclab.com/">VC Lab</a>, considered the premiere Venture Capital accelerator. I developed my thesis and fund materials, but did not raise a fund to formally graduate from the program.</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary><strong>ECOSYSTEM DEVELOPMENT</strong></summary>
+            <p>Provided extensive portfolio support, speaking engagements, and startup follow-on advisory for top-tier accelerators worldwide.</p>
+            
+            <ul>
+                <li><a href="https://www.techstars.com/">Techstars</a>. New York City, Hardware/IOT, Barclay's Fin-Tech &amp; Blockchain programs.</li>
+                
+                <li><a href="https://www.plugandplaytechcenter.com/">Plug and Play Tech Center</a>. Supply Chain &amp; Logistics, Brand &amp; Retail programs.</li>
+                
+                <li><a href="https://www.f6s.com/highway1">Highway1</a>. Silicon Valley's original hard-tech accelerator backed by PCH.</li>
+                
+                <li><a href="https://www.h-farm.com/en">H-Farm</a>. Italy.</li>
+                
+                <li><a href="https://www.gener8tor.com/">Gener8tor</a>. International. Emphasis on building global manufacturing and hard-tech businesses.</li>
+                
+                <li><a href="https://500.co/">500Global</a>. International. Emphasis on deep-tech, hard-tech, and AI.</li>
+            </ul>
+        </details>
+        
+        <h1 class="connect">I'd love to hear from you!  <br>Connect with me on <a href="https://www.linkedin.com/in/megangroves/">Linkedin</a> or by <a href="mailto:megan.m.groves@gmail.com">email</a>.</h1>
+    </main>
+</body>
+</html>
